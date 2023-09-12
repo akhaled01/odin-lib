@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/libraryicon.png"
+      type="image/x-icon"
+    />
+    <title>The Odin Library</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">The Odin Library</div>
+      <div class="tagline">Where reading is love</div>
+    </div>
+    <div class="maincontent">
+      <div class="actioncallers">
+        <div class="subtitle">Your Books</div>
+        <button class="cta" id="myBtn">
+          <span>Add New</span>
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <button class="closebtn" id="closebtn">
+            <span class="X"></span>
+            <span class="Y"></span>
+            <div class="close">Close</div>
+          </button>
+          <div class="input-group">
+            <input
+              required
+              type="text"
+              name="BookName"
+              autocomplete="off"
+              class="input"
+            />
+            <label class="user-label">Book Name</label>
+          </div>
+          <div class="input-group">
+            <input
+              required
+              type="text"
+              name="Author"
+              autocomplete="off"
+              class="input"
+            />
+            <label class="user-label">Author Name</label>
+          </div>
+          <div class="input-group">
+            <input
+              required
+              type="text"
+              name="PageNo"
+              autocomplete="off"
+              class="input"
+            />
+            <label class="user-label">Number of pages</label>
+          </div>
+          <div class="readornot">
+            <label class="checkboxy">
+              <input type="checkbox" name="readornot"/>
+              <div class="checkmark"></div>
+            </label>
+            <h3>Have You Read It?</h3>
+          </div>
+          <button class="submitbtn" id="submitbtn"><span>Submit</span></button>
+        </div>
+      </div>
+      <!--End Of Modal-->
+      <div class="bookwrapper"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
